@@ -1,0 +1,12 @@
+.App {
+  text-align: center;
+}
+
+.header-todo{
+  text-align: center;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  color: rgb(101, 43, 155);
+  font-weight: bold;
+  font-size: 30px;
+  background-color: rgb(213, 196, 229);
+}
