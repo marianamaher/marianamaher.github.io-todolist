@@ -49,13 +49,16 @@ function App() {
 
   return (
     <>
-    <label><div class="header-todo">To-Do List in React</div></label>
+    <label><div class="header-todo">TO-DO List ⚡ React</div></label>
     <br></br>
-    <TodoList todos={todos} toggleTodo={toggleTodo}/>
-    <input ref={todoNameRef} type="text"></input>
-    <button onClick={handleAddTodo}>Add Todo</button>
-    <button onClick={handleClearTodos}>Clear complete</button>
-    <div>{todos.filter(todo=> !todo.complete).length} left to do</div>
+    <div class="container">
+      <div class="body_todos"><TodoList todos={todos} toggleTodo={toggleTodo}/>
+      <input ref={todoNameRef} type="text"></input> 
+      <button onClick={handleAddTodo} id="addbutton"> Add Todo</button>
+      <button onClick={handleClearTodos}> Clear complete</button>
+      <div>{todos.filter(todo=> !todo.complete).length} left to do</div>
+      </div>
+    </div>
     </>
 
   );
